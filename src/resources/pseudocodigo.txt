@@ -1,0 +1,52 @@
+Método de Búsqueda Binaria:
+Entrada:
+  - arreglo: Un arreglo de elementos ordenados.
+  - dato: Elemento a buscar.
+
+Salida:
+  - La posición del elemento en el arreglo, o -1 si no se encuentra.
+
+Pasos:
+1. Inicializar las variables `inicio` y `fin` con los índices inicial y final del arreglo.
+2. Mientras `inicio` sea menor o igual a `fin`:
+   a. Calcular `mitad` como la posición media entre `inicio` y `fin`.
+   b. Si el elemento en `mitad` es igual a `dato`:
+      - Retornar `mitad` (Elemento encontrado en la posicion: ).
+   c. Si el elemento en `mitad` es menor que `dato`:
+      - Actualizar `inicio` a `mitad + 1`.
+   d. Si el elemento en `mitad` es mayor que `dato`:
+      - Actualizar `fin` a `mitad - 1`.
+3. Si el bucle termina sin encontrar el elemento:
+   a. Retornar -1 (Elemento no encontrado).
+
+Método de Búsqueda Secuencial o Lineal:
+Entrada:
+  - arreglo: Un arreglo de elementos.
+  - dato: El elemento a buscar.
+
+Salida:
+  - La posición del elemento en el arreglo, o -1 si no se encuentra.
+
+Pasos:
+1. Para cada elemento en el arreglo:
+   a. Comparar el elemento actual con `dato`.
+   b. Si son iguales:
+      -Retornar la posicion del elemento actual
+2. Si se termina el recorrido y no se enceuentra el elemento:
+   a. Retornar -1 ( Elemento no encontrado
+
+Algoritmo Main:
+Pasos:
+1. Definir un arreglo ordenado para la búsqueda binaria.
+2. Definir un arreglo no ordenado para la búsqueda secuencial.
+3. Definir los valores a buscar en cada arreglo.
+4. Llamar al método de búsqueda binaria con el arreglo ordenado y el valor a buscar.
+5. Si el elemento es encontrado:
+   a. Mostrar la posición del elemento.
+6. Si no:
+   a. Mostrar un mensaje indicando que el elemento no fue encontrado.
+7. Llamar al método de búsqueda secuencial con el arreglo no ordenado y el valor a buscar.
+8. Si el elemento es encontrado:
+   a. Mostrar la posición del elemento.
+9. Si no:
+   a. Mostrar un mensaje indicando que el elemento no fue encontrado.
